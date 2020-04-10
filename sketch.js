@@ -54,6 +54,8 @@ function draw() {
     // This is the value of your gravity. You can optionally show it to the viewer.
     var fVal = gSlider.value();
 
+    world.gravity.y = fVal*0.01;
+
     // Use a for loop to show all the boxes
     for (var i = 0; i < boxes.length; i++) {
         boxes[i].show();
